@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".StopWatchActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:text="00:00" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Ver_padding"
+        android:onClick="onClickStart"
+        android:paddingLeft="@dimen/hor_padding"
+        android:paddingRight="@dimen/hor_padding"
+        android:text="@string/btn_Start" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Ver_padding"
+        android:onClick="onClickStop"
+        android:paddingLeft="@dimen/hor_padding"
+        android:paddingRight="@dimen/hor_padding"
+        android:text="@string/btn_Stop" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/Ver_padding"
+        android:onClick="onClickReset"
+        android:paddingLeft="@dimen/hor_padding"
+        android:paddingRight="@dimen/hor_padding"
+        android:text="@string/btn_Reset" />
+
+</LinearLayout>
